@@ -92,19 +92,6 @@
     }
 }
 
-body {
-    margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
-    text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
 hr {
     margin: 1rem 0;
     color: inherit;
@@ -12615,9 +12602,10 @@ html {
 }
 
 body {
+    font-family: monospace;
     position: relative;
-    background: black;
-    color: #f0f0f0;
+    background: linear-gradient(to right, #0A0E17 0%, 26.48456057007126%, #0A111D 52.96912114014252%, 84.42101477931993%, #0E274A 100%);  
+    color: #116EBF;
 }
 
 p {
@@ -12672,14 +12660,9 @@ p {
     color: blue;
 }
 
-.btn-outline-success {
-    color: blue;
-    border-color: blue;
-}
-
 .nav-link-modif {
     position: relative;
-    background-image: linear-gradient(70deg, #fff, #066173);
+    background-image: linear-gradient(70deg, #138AF2, #138AF2);
     background-repeat: no-repeat;
     background-size: 0% .125rem;
     background-position: center bottom;
@@ -12687,18 +12670,17 @@ p {
 }
 
 .nav-link-modif:hover {
-    color: linear-gradient(70deg, #fff, #066173);
+    color: linear-gradient(70deg, #138AF2, #138AF2);
     background-size: 100% .125rem;
 }
-
 
 .nav-link {
     &::after {
         content: "";
-        background-image: linear-gradient(70deg, #fff, #066173);
+        background-image: linear-gradient(70deg, #138AF2, #138AF2);
         position: absolute;
         left: 0;
-        top: 95%;
+        top: 94%;
         width: 100%;
         height: .125rem;
         opacity: 0;
@@ -12722,11 +12704,9 @@ p {
 }
 
 
-
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #000;
 }
 
 #mainNav .navbar-toggler {
@@ -12738,11 +12718,11 @@ p {
 }
 
 #mainNav .navbar-brand {
-    color: #066173;
+    color: #138AF2;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     letter-spacing: 0.0625em;
-    text-transform: uppercase;
+    
 }
 
 #mainNav .navbar-brand img {
@@ -12758,7 +12738,7 @@ p {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #066173;
+    color: #FFF;
 }
 
 @media (min-width: 992px) {
@@ -12782,9 +12762,9 @@ p {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #1a1e21;
+        background-color: #0C0C0D;
         border-bottom: 3px solid black;
-        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 10px #138AF2, 0 0 10px #090D26;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -12811,54 +12791,33 @@ header.masthead {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    animation: beamAnimation 3s infinite alternate;
 }
 
-/* @keyframes beamAnimation {
-    0% {
-        transform: translatex(-50%) ;
-    }
-    100% {
-        transform: translatex(50%) ;
-
-    }
-} */
-
-
 header .container_leyenda {
+    margin-top: 15%;
+    color: #138AF2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12% 0 0 5%;
-    width: 70%;
+    width: 100%;
     line-height: 3.5rem;
-    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: monospace;
 }
 
-/* .btn-cv{
-
-} */
-header .container_gif {
-    display: flex;
-    margin: 6% 5% 6% 0;
-    width: 40%;
-}
-
-.gif_header {
-    width: 120%;
-    height: 100%;
+.h1_leyenda {
+    font-size: 3.8rem;
 }
 
 @media (min-width: 768px) {
     header.masthead {
         height: 100vh;
-        padding: 7% 0;
+        padding: 6% 0;
     }
 
     header.container_leyenda {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         margin-top: 0;
     }
 
