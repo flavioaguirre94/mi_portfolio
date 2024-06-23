@@ -50,5 +50,37 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
+
+// Inicializar ScrollReveal
+ScrollReveal().reveal('.reveal-top', {
+    distance: '15px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'top',
+    reset: true
+});
+
+ScrollReveal().reveal('.reveal-right', {
+    distance: '15px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'right',
+    reset: true
+});
+
+ScrollReveal().reveal('.reveal-left', {
+    distance: '15px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'left',
+    reset: true
+})
+
+ScrollReveal().reveal('.reveal-bottom', {
+    distance: '15px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'bottom',
+    reset: true
+})

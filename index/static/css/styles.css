@@ -141,7 +141,7 @@ h2,
 
     h2,
     .h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -12615,7 +12615,7 @@ p {
 }
 
 .page-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 .page-section h2.section-heading,
@@ -12811,6 +12811,21 @@ p {
     #mainNav .link-linkedin .borde-linkedin{
         border-radius: .3rem;
     }
+
+    #mainNav .link-github, #mainNav .link-linkedin {
+        transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+    }
+    
+    #mainNav .link-github:hover, #mainNav .link-linkedin:hover{
+        box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+        transform: translate(0px,2px);
+        -webkit-transform: translate(0px,2px);
+        -moz-transform:translate(0px,2px);
+        border-radius: .5rem;
+    }
+    
 }
 
 header.masthead {
@@ -12834,11 +12849,6 @@ header .container_leyenda {
     width: 100%;
     line-height: 3.5rem;
     font-family: monospace;
-}
-
-.svg-header{
-    width: 100%;
-    height: 5rem;
 }
 
 .h1_leyenda {
@@ -12895,8 +12905,6 @@ header .container_leyenda {
 .btn-descarga-cv:first-child{
     filter: hue-rotate(225deg);
 }
-
-
 
 @keyframes animacion_boton {
     0% {background-position: 0 0;}
@@ -12958,6 +12966,24 @@ header .container_leyenda {
     to {
         height: 100%;
     }
+}
+
+section .container-sobre-mi {
+    margin: 7% 0 5% 6%;
+    display: flex;
+    gap: 3rem;
+    max-width: 90%;
+}
+
+section .container-sobre-mi .foto-perfil{
+    border-radius: 50%;
+    width: 27%;
+    height: 70%;
+}
+
+section .container-sobre-mi .texto-sobre-mi{
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
