@@ -34,7 +34,7 @@
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item nav-link-modif active"><a class="nav-link" href="#page-top">Inicio</a></li>
                     <li class="nav-item nav-link-modif"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-                    <li class="nav-item nav-link-modif"><a class="nav-link" href="#portfolio">Proyectos</a></li>
+                    <li class="nav-item nav-link-modif"><a class="nav-link" href="#proyectos">Proyectos</a></li>
                     <li class="nav-item nav-link-modif"><a class="nav-link" href="#about">Estudios</a></li>
                     <li class="nav-item nav-link-modif"><a class="nav-link" href="#team">Redes</a></li>
                     <li class="nav-item nav-link-modif"><a class="nav-link" href="#contact">Contacto</a></li>
@@ -78,7 +78,7 @@
                 <h2 class="section-heading text-uppercase reveal-top">¿Quien soy?</h2>
                 <div class="container-sobre-mi reveal-top">
                     <img class="foto-perfil reveal-top" src="{% static 'assets/img/team/3.jpg' %}" alt="">
-                    <div class="d-f justify-content-center ">
+                    <div class="d-f justify-content-center reveal-top">
                         <h3 class="texto-sobre-mi section-subheading text-muted reveal-top">
                             Mi nombre es Flavio Aguirre. Oriundo de Posadas, capital de la Provincia de Misiones, 
                             Argentina.
@@ -87,7 +87,7 @@
                             como Data Scientist.
                         </h3>
                         <a href="{% static 'assets/Curso_python_coursera.pdf' %}" target="_blank" rel="noopener noreferrer">
-                            <img class="w-25" src="{% static 'assets/img/certificado_python.png' %}" alt="">
+                            <img class="w-25 reveal-top" src="{% static 'assets/img/certificado_python.png' %}" alt="">
                         </a>
                     </div>
                 </div>
@@ -123,22 +123,22 @@
             </div> -->
         </div>
     </section>
-    <!-- Portfolio Grid-->
-    <section class="page-section reveal" id="portfolio">
-        <div class="container reveal">
+    <!-- proyectos Grid-->
+    <section class="page-section reveal-top" id="proyectos">
+        <div class="container reveal-top">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-heading text-uppercase reveal-top mt-2">Proyectos</h2>
+                <h3 class="section-subheading text-muted reveal-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae quae necessitatibus ea soluta, reprehenderit provident sed perspiciatis nobis, inventore accusantium amet architecto distinctio modi iure. Voluptatum enim amet deserunt?</h3>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="col-lg-4 col-sm-6 mb-4 reveal-top">
                     <!-- Portfolio item 1-->
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/1.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Threads</div>
@@ -153,7 +153,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/2.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Explore</div>
@@ -168,7 +168,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/3.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Finish</div>
@@ -183,7 +183,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/4.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Lines</div>
@@ -198,7 +198,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/5.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Southwest</div>
@@ -213,7 +213,7 @@
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/6.jpg' %}" alt="..." />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Window</div>
