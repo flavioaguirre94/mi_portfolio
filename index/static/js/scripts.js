@@ -1,5 +1,6 @@
-// Scripts 
+// -------------- Scripts 
 
+// Efecto navegador Responsive
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -45,6 +46,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 });
 
+
 // Inicializar ScrollReveal
 ScrollReveal().reveal('.reveal-top', {
     distance: '25px',
@@ -77,3 +79,23 @@ ScrollReveal().reveal('.reveal-bottom', {
     origin: 'bottom',
     reset: true
 })
+
+
+// Efecto maquina de escribir infinito "Header"
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const h1 = entry.target;
+            if (entry.isIntersecting) {
+                h1.classList.remove('hidden');
+                h1.classList.add('h1_leyenda');
+            } else {
+                h1.classList.remove('h1_leyenda');
+                h1.classList.add('hidden');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const h1Leyenda = document.querySelector('.h1_leyenda');
+    observer.observe(h1Leyenda);
+});
